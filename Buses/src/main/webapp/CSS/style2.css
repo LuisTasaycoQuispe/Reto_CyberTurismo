@@ -1,0 +1,223 @@
+@charset "utf-8";
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+.encabezado {
+	position: relative;
+	background-image: url(../IMG/encabezadoarriba.png);
+	color: #fff;
+	display: flex;
+	width: 100%;
+	height: 45px;
+	align-items: center;
+}
+
+.izquierda, .derecha {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+}
+
+.izquierda {
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.derecha {
+	width: 100%;
+	justify-content: end;
+	margin-right: 20px;
+}
+
+.derecha a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 14px;
+}
+
+.derecha a:hover {
+	color: #F51212;
+	text-decoration: underline;
+}
+
+.izquierda img {
+	position: relative;
+	top: -9px;
+	width: 7%;
+}
+
+.derecha img {
+	width: 2%;
+}
+
+.derecha p {
+	position: relative;
+	top: 8px;
+}
+
+#btn {
+	margin-left: 2%;
+	font-size: 25px;
+}
+
+.close {
+	position: relative;
+	top: -10px;
+}
+
+.usuario {
+	width: 100%;
+	border-bottom: 1px solid #111;
+	border-top: 1px solid #111;
+	padding-bottom: 10px;
+	align-items: center;
+	padding: 10px 10px 10px 30px;
+	display: flex;
+	gap: 40px;
+	position: relative;
+	margin-top: -25px;
+}
+
+.usuario img {
+	width: 18%;
+	border-radius: 50%;
+	border: 1px solid #111;
+}
+
+.usuario h5 {
+	font-size: 18px;
+}
+
+.usuario p {
+	font-size: 14px;
+}
+
+.usuario_nombre {
+	position: relative;
+	top: 7px;
+}
+
+.wrapper {
+	align-items: stretch;
+	display: flex;
+	width: 100%;
+}
+
+/* Sidebar collapse */
+.sidebar-nav {
+	padding: 0;
+}
+
+.sidebar-header {
+	color: #000000;
+	font-size: .70rem;
+	padding: 1.5rem 1.5rem .375rem;
+	font-weight: bold;
+}
+
+a.sidebar-link {
+	padding: .625rem 1.625rem;
+	color: #000000;
+	position: relative;
+	display: block;
+	font-size: 0.85rem;
+	text-decoration: none;
+}
+
+.sidebar-link[data-bs-toggle="collapse"]::after {
+	border: solid;
+	border-width: 0 .075rem .075rem 0;
+	content: "";
+	display: inline-block;
+	padding: 2px;
+	position: absolute;
+	right: 1.5rem;
+	top: 1.4rem;
+	transform: rotate(-135deg);
+	transition: all .2s ease-out;
+}
+
+.sidebar-link[data-bs-toggle="collapse"].collapsed::after {
+	transform: rotate(45deg);
+	transition: all .2s ease-out;
+}
+
+.content {
+	flex: 1;
+	max-width: 100vw;
+	width: 100vw;
+}
+
+/* Responsive */
+@media ( min-width :768px) {
+	.content {
+		width: auto;
+	}
+}
+
+ul img {
+	width: 7.5%;
+	height: auto;
+	object-fit: cover;
+}
+
+ul li ul li {
+	margin-left: 25px;
+}
+
+.workspace {
+	margin-left: 100px;
+}
+
+.ajustar {
+	margin: 0px 40px;
+	margin-top: 10px
+}
+
+#resul-margen {
+	margin: 0px 40px;
+	padding: 100px;
+}
+
+.card button {
+	width: 10rem;
+}
+
+button img {
+	width: 1.5rem;
+	margin-right: 10px
+}
+
+.input-error {
+	border-color: red;
+}
+
+.h4-vendedores {
+	margin: 15px;
+	text-align: center;
+}
+
+.invalid-feedback {
+	font-size: 13px;
+}
+
+.needs-validation input {
+	font-size: 13px;
+}
+
+.col-form-label {
+	font-size: 15px;
+}
+/* Agregar una clase de Bootstrap para los mensajes de validación */
+.invalid-feedback {
+	position: absolute;
+}
+
+.valid-feedback {
+	position: absolute;
+}
